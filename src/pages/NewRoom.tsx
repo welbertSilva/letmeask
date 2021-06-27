@@ -28,7 +28,7 @@ export function NewRoom(){
             authorId: user?.id,
         })
 
-        history.push(`/room/${firebaseRoom.key}`) //id criado dentro da base do firebase
+        history.push(`/rooms/${firebaseRoom.key}`) //id criado dentro da base do firebase
     }
 
     return(

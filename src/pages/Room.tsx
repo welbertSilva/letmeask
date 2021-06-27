@@ -92,7 +92,7 @@ export function Room(){
                     </div>
                 </form>
 
-                <div>
+                <div className="list_questions">
                     { questions.map(question => {
                         return (
                             <Question 

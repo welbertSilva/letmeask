@@ -46,6 +46,7 @@ export function useRoom(roomId: string) {
     //Aqui é uma API do firebase, se houve dúvida, ler a documentação do firebase.
     roomRef.on("value", (room) => {
       const databaseRoom = room.val();
+      console.log(databaseRoom);
       const firebaseQuestions: FirebaseQuestions = databaseRoom.questions ?? {};
 
       const parsedQuestions = Object.entries(firebaseQuestions).map(
